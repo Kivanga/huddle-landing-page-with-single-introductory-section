@@ -13,3 +13,98 @@
     --fw-poppins-semi-bold: 600;
     --fw-open-sans-regular: 400;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-open-sans);
+    background-color: var(--violet);
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Header Styles */
+.header {
+    margin-bottom: 4rem;
+}
+
+.logo {
+    width: 140px;
+}
+
+/* Mobile First Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+}
+
+.illustration img {
+    width: 100%;
+    max-width: 700px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-poppins-semi-bold);
+    font-size: 1.75rem;
+    line-height: 1.4;
+}
+
+.description {
+    opacity: .6;
+    line-height: 1.6;
+}
+
+/* CTA Button Styles */
+.cta-button {
+    align-self: center;
+    background: white;
+    color: var(--violet);
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    font-family: var(--ff-poppins);
+    font-size: 1rem;
+    box-shadow: 0 5px 15px rgba( 0, 0, 0, 0.2 );
+    cursor: pointer;
+}
+
+/* Socials Links Styles */
+.social-links {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
